@@ -1,15 +1,13 @@
-﻿using UnityEngine.SceneManagement;
-
-public class GameOverViewController : ViewController<GameOverView>
+﻿public class EndGameViewController : ViewController<EndGameView>
 {
-    public GameOverViewController(GameOverView view) : base(view)
+    public EndGameViewController(EndGameView view) : base(view)
     {
     }
 
     public void Setup(string title)
     {
         View.Setup(title);
-        View.AddButton(RestartLevel, "Recomeçar");
+        View.AddButton(RestartLevel, "Refazer Fase");
         View.AddButton(GoToMainMenu, "Menu");
     }
 

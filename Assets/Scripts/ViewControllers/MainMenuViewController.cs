@@ -19,8 +19,7 @@ public class MainMenuViewController : ViewController<MainMenuView>
 
     private void PlayGame()
     {
-        string firstLevel = ((Enums.Scenes) 1).ToString();
-        SceneManager.LoadScene(firstLevel);
+        GameSceneManager.GoToNextScene();
     }
 
     private void ShowSettingsMenu()
