@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class SettingsMenuView : View
 {
-    [SerializeField] private ButtonView _backButtonView;
+    [SerializeField] private ButtonView _backButtonView = null;
 
     public void Setup(Action backAction, string labelText)
     {

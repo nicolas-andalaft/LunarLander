@@ -4,8 +4,8 @@ using UnityEngine;
 public class HudLevelView : View
 {
     [Header("Buttons")]
-    [SerializeField] private Transform _buttonHolder;
-    [SerializeField] private ButtonView _buttonViewPrefab;
+    [SerializeField] private Transform _buttonHolder = null;
+    [SerializeField] private ButtonView _buttonViewPrefab = null;
 
     public void Setup()
     {

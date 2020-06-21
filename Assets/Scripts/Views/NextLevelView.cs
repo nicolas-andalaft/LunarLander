@@ -5,11 +5,11 @@ using UnityEngine.UI;
 public class NextLevelView : View
 {
     [Header("Title")]
-    [SerializeField] private Text _titleText;
+    [SerializeField] private Text _titleText = null;
 
     [Header("Buttons")]
-    [SerializeField] private Transform _buttonHolder;
-    [SerializeField] private ButtonView _buttonViewPrefab;
+    [SerializeField] private Transform _buttonHolder = null;
+    [SerializeField] private ButtonView _buttonViewPrefab = null;
 
     public void Setup(string title)
     {

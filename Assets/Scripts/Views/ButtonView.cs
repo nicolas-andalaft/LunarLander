@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class ButtonView : MonoBehaviour
 {
     private Action _buttonCallback;
-    [SerializeField] private Text _labelText;
+    [SerializeField] private Text _labelText = null;
 
     public void Setup(Action buttonCallback, string labelText)
     {
