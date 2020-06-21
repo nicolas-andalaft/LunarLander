@@ -8,6 +8,8 @@ public class ViewControllerFactory : MonoBehaviour
 
     [SerializeField] private MainMenuView _mainMenuViewPrefab;
     [SerializeField] private SettingsMenuView _settingsMenuViewPrefab;
+    [SerializeField] private HudLevelView _hudLevelViewPrefab;
+    [SerializeField] private GameOverView _gameOverViewPrefab;
 
     public MainMenuViewController CreateMainMenuViewController()
     {
@@ -19,5 +21,17 @@ public class ViewControllerFactory : MonoBehaviour
     {
         var settingsMenuView = Instantiate(_settingsMenuViewPrefab);
         return new SettingsMenuViewController(settingsMenuView);
+    }
+
+    public HudLevelViewController CreateHudLevelViewController()
+    {
+        var hudLevelView = Instantiate(_hudLevelViewPrefab);
+        return new HudLevelViewController(hudLevelView, this);
+    }
+
+    public GameOverViewController CreateGameOverViewController()
+    {
+        var gameOverView = Instantiate(_gameOverViewPrefab);
+        return new GameOverViewController(gameOverView);
     }
 }

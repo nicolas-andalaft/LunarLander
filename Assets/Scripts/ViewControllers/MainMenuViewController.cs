@@ -1,6 +1,5 @@
-﻿using System.Runtime.InteropServices;
-using System.Security.Cryptography;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenuViewController : ViewController<MainMenuView>
 {
@@ -20,7 +19,8 @@ public class MainMenuViewController : ViewController<MainMenuView>
 
     private void PlayGame()
     {
-        Debug.Log("Bora Jogar");
+        string firstLevel = ((Enums.Scenes) 1).ToString();
+        SceneManager.LoadScene(firstLevel);
     }
 
     private void ShowSettingsMenu()
