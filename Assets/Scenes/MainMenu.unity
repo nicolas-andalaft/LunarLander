@@ -213,6 +213,7 @@ GameObject:
   m_Component:
   - component: {fileID: 945748883}
   - component: {fileID: 945748882}
+  - component: {fileID: 945748884}
   m_Layer: 0
   m_Name: App Delegate
   m_TagString: Untagged
@@ -233,7 +234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _wireframe: {fileID: 1593613943}
-  _factory: {fileID: 1593613942}
+  _factory: {fileID: 945748884}
 --- !u!4 &945748883
 Transform:
   m_ObjectHideFlags: 0
@@ -248,6 +249,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &945748884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945748881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bfac78712de76343848afd7b7a3e1f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _wireframe: {fileID: 1593613943}
+  _mainMenuViewPrefab: {fileID: 8164918010335255668, guid: 2d531aa70fecc76428f9d273567977b8,
+    type: 3}
+  _settingsMenuViewPrefab: {fileID: 3150124770016865430, guid: 66a454f4b50c8e44a9740df8522d4314,
+    type: 3}
 --- !u!1 &1365237641
 GameObject:
   m_ObjectHideFlags: 0
@@ -423,7 +441,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1593613941}
   - component: {fileID: 1593613943}
-  - component: {fileID: 1593613942}
   m_Layer: 5
   m_Name: UI Holder
   m_TagString: Untagged
@@ -450,21 +467,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1593613942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593613940}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bfac78712de76343848afd7b7a3e1f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _wireframe: {fileID: 1593613943}
-  _mainMenuViewPrefab: {fileID: 8164918010335255668, guid: 2d531aa70fecc76428f9d273567977b8,
-    type: 3}
 --- !u!114 &1593613943
 MonoBehaviour:
   m_ObjectHideFlags: 0
