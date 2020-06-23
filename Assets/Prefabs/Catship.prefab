@@ -299,4 +299,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotSpeed: 50
   propulsion: 5
-  tolerance: 1.5
+  tolerance: 2

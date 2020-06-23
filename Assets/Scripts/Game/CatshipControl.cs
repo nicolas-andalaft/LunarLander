@@ -8,6 +8,7 @@ public class CatshipControl : MonoBehaviour
 
     Transform tr;
     Rigidbody2D rb;
+    Animator anim;
 
     Vector2 dirForce;
     float rbVel;
@@ -15,23 +16,19 @@ public class CatshipControl : MonoBehaviour
     void Awake() {
         tr = GetComponent<Transform>();
         rb = GetComponent<Rigidbody2D>();
-    }
-
-    void Start() {
-        //StartCoroutine(ObserveVelocity());
+        anim = GetComponent<Animator>();
     }
 
     void FixedUpdate() {
         Rotate();
         Propulsion();
+        ControllAnim();
         rbVel = rb.velocity.magnitude;
     }
-//
-    //IEnumerator ObserveVelocity() {
-        //while (true) {
-            //yield return WaitForSeconds(0.1f);
-        //}
-    //}
+
+    void ControllAnim() {
+        anim.SetBool("jetActive", dirForce.magnitude > 0.02f);
+    }
 
     void Rotate() {
         float dirSpeed = Input.GetAxis("Horizontal");
