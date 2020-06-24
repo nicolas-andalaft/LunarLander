@@ -122,7 +122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _titleText: {fileID: 5952078203356083794}
   _buttonHolder: {fileID: 181392691835142219}
-  _buttonViewPrefab: {fileID: 3761226502834128159, guid: 7593571568a07554f90da8903d8feb65,
+  _buttonViewPrefab: {fileID: 8666926629092124027, guid: e2339fd95130aadcc845ec4a3402c7f2,
     type: 3}
 --- !u!1001 &6183701251689858351
 PrefabInstance:
