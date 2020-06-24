@@ -8,7 +8,7 @@ public class GameState : MonoBehaviour
     public static GameState instance;
     public int fase_idx;
 
-    const int QTD_FASES = 2;
+    const int QTD_FASES = 3;
 
     Action actPerder, actProxFase, actGanharJogo;
 

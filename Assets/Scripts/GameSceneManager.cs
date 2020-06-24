@@ -9,6 +9,7 @@ public class GameSceneManager : MonoBehaviour
         MainMenu = 0,
         GameScene_F1,
         GameScene_F2,
+        GameScene_F3,
     }
 
     public static void GoToScene(Scenes scene)
