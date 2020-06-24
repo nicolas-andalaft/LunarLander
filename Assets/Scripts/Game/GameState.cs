@@ -6,10 +6,11 @@ using UnityEngine;
 public class GameState : MonoBehaviour
 {
     public static GameState instance;
-    public GameObject[] fases;
+    public int fase_idx;
 
-    int fase_i;
-    Action actPerder, actGanharJogo;
+    const int QTD_FASES = 2;
+
+    Action actPerder, actProxFase, actGanharJogo;
 
     CatshipControl catshipCtrl;
 
@@ -18,37 +19,32 @@ public class GameState : MonoBehaviour
         catshipCtrl = FindObjectOfType<CatshipControl>();
     }
 
-    void Start() {
-        fase_i = -1;
-        ProximaFase();
-    }
-
-    void ProximaFase() {
-        if (fase_i >= 0)
-            fases[fase_i].SetActive(false);
-        ++fase_i;
-        fases[fase_i].SetActive(true);
-        catshipCtrl.transform.position = (
-            GameObject.FindWithTag("StartPoint").GetComponent<Transform>().position
-        );
+    public void Setup(Action actionPerder, Action actionProxFase, Action actionGanharJogo) {
+        actPerder = actionPerder;
+        actProxFase = actionProxFase;
+        actGanharJogo = actionGanharJogo;
     }
 
     public void Perder() {
-        Debug.Log("Perder");
         if (actPerder != null)
             actPerder.Invoke();
+        Destroy(gameObject);
     }
 
     public void Ganhar() {
-        if (fase_i + 1 < fases.Length)
-            ProximaFase();
-        else
-            GanharJogo();
+        if (fase_idx + 1 < QTD_FASES) {
+            if (actProxFase != null)
+                actProxFase.Invoke();
+        } else {
+            if (actGanharJogo != null)
+                actGanharJogo.Invoke();
+        }
+        Destroy(gameObject);
     }
 
     public void GanharJogo() {
-        Debug.Log("Ganhar Jogo");
         if (actGanharJogo != null)
             actGanharJogo.Invoke();
     }
+
 }

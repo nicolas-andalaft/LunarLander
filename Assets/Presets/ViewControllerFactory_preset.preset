@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!181963792 &2655988077585873504
+Preset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ViewControllerFactory_preset
+  m_TargetType:
+    m_NativeTypeID: 114
+    m_ManagedTypePPtr: {fileID: 11500000, guid: 1bfac78712de76343848afd7b7a3e1f0,
+      type: 3}
+    m_ManagedTypeFallback: 
+  m_Properties:
+  - target: {fileID: 0}
+    propertyPath: m_Enabled
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorHideFlags
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorClassIdentifier
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _wireframe
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _mainMenuViewPrefab
+    value: 
+    objectReference: {fileID: 8164918010335255668, guid: 2d531aa70fecc76428f9d273567977b8,
+      type: 3}
+  - target: {fileID: 0}
+    propertyPath: _settingsMenuViewPrefab
+    value: 
+    objectReference: {fileID: 3150124770016865430, guid: 66a454f4b50c8e44a9740df8522d4314,
+      type: 3}
+  - target: {fileID: 0}
+    propertyPath: _hudLevelViewPrefab
+    value: 
+    objectReference: {fileID: -8297179664026370103, guid: 4a6418921a838b042a778350d6c466d9,
+      type: 3}
+  - target: {fileID: 0}
+    propertyPath: _gameOverViewPrefab
+    value: 
+    objectReference: {fileID: -7448187981932429056, guid: 7dad1d948a3a7b9499eb260a08c88553,
+      type: 3}
+  - target: {fileID: 0}
+    propertyPath: _nextLevelViewPrefab
+    value: 
+    objectReference: {fileID: 4021235411124304301, guid: bd7e924eb14aa4a4c83de8140a709cee,
+      type: 3}
+  - target: {fileID: 0}
+    propertyPath: _endGameViewPrefab
+    value: 
+    objectReference: {fileID: 8421647373101545662, guid: c8fab4f106b37db42b54fb7180b0c214,
+      type: 3}

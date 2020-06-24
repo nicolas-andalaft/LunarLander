@@ -266,6 +266,14 @@ MonoBehaviour:
     type: 3}
   _settingsMenuViewPrefab: {fileID: 3150124770016865430, guid: 66a454f4b50c8e44a9740df8522d4314,
     type: 3}
+  _hudLevelViewPrefab: {fileID: -8297179664026370103, guid: 4a6418921a838b042a778350d6c466d9,
+    type: 3}
+  _gameOverViewPrefab: {fileID: -7448187981932429056, guid: 7dad1d948a3a7b9499eb260a08c88553,
+    type: 3}
+  _nextLevelViewPrefab: {fileID: 4021235411124304301, guid: bd7e924eb14aa4a4c83de8140a709cee,
+    type: 3}
+  _endGameViewPrefab: {fileID: 8421647373101545662, guid: c8fab4f106b37db42b54fb7180b0c214,
+    type: 3}
 --- !u!1 &1365237641
 GameObject:
   m_ObjectHideFlags: 0

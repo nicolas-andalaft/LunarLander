@@ -6,7 +6,9 @@ public class GameSceneManager : MonoBehaviour
 {
     public enum Scenes
     {
-        MainMenu = 0, TestLevel,
+        MainMenu = 0,
+        GameScene_F1,
+        GameScene_F2,
     }
 
     public static void GoToScene(Scenes scene)
@@ -21,9 +23,9 @@ public class GameSceneManager : MonoBehaviour
         Array scenesArray = Enum.GetValues(typeof(Scenes));
 
         sceneIndex++;
-        string nextScene = 
-            sceneIndex < scenesArray.Length ? 
-                ((Scenes)sceneIndex).ToString() : 
+        string nextScene =
+            sceneIndex < scenesArray.Length ?
+                ((Scenes)sceneIndex).ToString() :
                 Scenes.MainMenu.ToString();
 
         SceneManager.LoadScene(nextScene);

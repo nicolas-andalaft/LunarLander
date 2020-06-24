@@ -3,6 +3,7 @@
 public class HudLevelViewController : ViewController<HudLevelView>
 {
     private ViewControllerFactory _factory;
+    GameState gameState;
 
     public HudLevelViewController(HudLevelView view, ViewControllerFactory factory) : base(view)
     {
@@ -11,9 +12,11 @@ public class HudLevelViewController : ViewController<HudLevelView>
 
     public void Setup()
     {
-        View.AddButton(ShowGameOver, "Test GameOver");
-        View.AddButton(ShowNextLevelMenu, "Test NextLevel");
-        View.AddButton(ShowEndGame, "Test EndGame");
+        //View.AddButton(ShowGameOver, "Test GameOver");
+        //View.AddButton(ShowNextLevelMenu, "Test NextLevel");
+        //View.AddButton(ShowEndGame, "Test EndGame");
+        gameState = Object.FindObjectOfType<GameState>();
+        gameState.Setup(ShowGameOver, ShowNextLevelMenu, ShowEndGame);
     }
 
     private void ShowGameOver()
@@ -22,7 +25,7 @@ public class HudLevelViewController : ViewController<HudLevelView>
         viewController.Setup("Game Over");
         viewController.View.transform.SetParent(View.transform, false);
     }
-    
+
     private void ShowNextLevelMenu()
     {
         var viewController = _factory.CreateNextLevelViewController();
