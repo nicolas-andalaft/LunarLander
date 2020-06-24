@@ -201,10 +201,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Node
       objectReference: {fileID: 0}
+    - target: {fileID: 2660159898619189205, guid: ff06c1b173dbcfe7d8eeb146e6cc4b97,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4958831828796507179, guid: ff06c1b173dbcfe7d8eeb146e6cc4b97,
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5413754579494756609, guid: ff06c1b173dbcfe7d8eeb146e6cc4b97,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.66
       objectReference: {fileID: 0}
     - target: {fileID: 7147209437808308260, guid: ff06c1b173dbcfe7d8eeb146e6cc4b97,
         type: 3}

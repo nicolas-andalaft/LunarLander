@@ -10,6 +10,11 @@ public class GameSceneManager : MonoBehaviour
         GameScene_F1,
         GameScene_F2,
         GameScene_F3,
+        GameScene_F4,
+        GameScene_F5,
+        GameScene_F6,
+        GameScene_F7,
+        GameScene_F8,
     }
 
     public static void GoToScene(Scenes scene)
